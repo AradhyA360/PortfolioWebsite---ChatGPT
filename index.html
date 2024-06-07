@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aradhya Priyadarshi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        overflow-x: hidden;
+      }
+      header {
+        background: url("profile.jpg") no-repeat center center/cover;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+        position: relative;
+        animation: fadeIn 2s;
+      }
+      header::after {
+        content: "";
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      header h1,
+      header p {
+        position: relative;
+        z-index: 1;
+      }
+      nav {
+        text-align: center;
+        margin: 20px 0;
+        animation: slideIn 2s;
+      }
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        transition: color 0.3s;
+      }
+      nav a:hover {
+        color: #4caf50;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+      section {
+        margin: 20px 0;
+      }
+      h1,
+      h2 {
+        color: #4caf50;
+        text-align: center;
+      }
+      .contact-info,
+      .project-links a {
+        display: block;
+        margin: 5px 0;
+      }
+      .project {
+        background: #fff;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .project:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .project img {
+        max-width: 100%;
+        border-radius: 5px;
+      }
+      footer {
+        background: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slideIn {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Aradhya Priyadarshi</h1>
+      <p>
+        Dedicated to addressing challenges, programming, and effectively
+        implementing solutions.
+      </p>
+    </header>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Currently pursuing a Bachelor of Technology in Information Technology
+          at Ajay Kumar Garg Engineering College. Possessing a profound
+          fascination with Data Structures and Algorithms, with expertise in
+          C++, Python, and Frontend Development.
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>WebChat - Chat Application Website</h3>
+          <img src="webchat.jpg" alt="WebChat Project" />
+          <p>
+            Developed a Chat Application Website for seamless and engaging
+            online conversations, powered by a robust Python backend and a
+            polished HTML/CSS frontend.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/AradhyA360/WebChat" target="_blank"
+              ><i class="fab fa-github"></i> GitHub Repository</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <h3>RymdClothing - E-commerce Website</h3>
+          <img src="ecommerce.jpg" alt="RymdClothing Project" />
+          <p>
+            Developed a fully responsive e-commerce website, providing real-time
+            payment systems using RazorPay and seamless integration for
+            efficient management of order operations. Implemented using React
+            and Firebase.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/AradhyA360/RymdClothing" target="_blank"
+              ><i class="fab fa-github"></i> GitHub Repository</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <h3>MyCollegePartner</h3>
+          <img src="erp.jpg" alt="MyCollegePartner Project" />
+          <p>
+            Developed a dynamic and responsive website using Tailwind CSS,
+            offering a visually appealing and user-friendly platform for college
+            students, providing features such as interactive collaboration,
+            resource sharing, and streamlined communication.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://github.com/AradhyA360/MyCollegePartner"
+              target="_blank"
+              ><i class="fab fa-github"></i> GitHub Repository</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Programming Languages: C, C++, Python</li>
+          <li>Development: HTML, CSS, JavaScript, Tailwind CSS, React</li>
+          <li>Databases: MySQL, MongoDB, Firebase</li>
+          <li>
+            Others: Visual Studio Code, Git, GitHub, ChatGPT, WordPress, Adobe
+            Photoshop, Adobe Premiere Pro, FL Studio, PC Gaming
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+          <p>
+            Email:
+            <a href="mailto:aradhyapriyadarshi@gmail.com"
+              >aradhyapriyadarshi@gmail.com</a
+            >
+          </p>
+          <p>Phone: +91 8808907500</p>
+          <p>
+            GitHub:
+            <a href="https://github.com/AradhyA360" target="_blank"
+              ><i class="fab fa-github"></i> github.com/AradhyA360</a
+            >
+          </p>
+          <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/aradhyaz1000/" target="_blank"
+              ><i class="fab fa-linkedin"></i> linkedin.com/in/aradhyaz1000/</a
+            >
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2024 Aradhya Priyadarshi. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
